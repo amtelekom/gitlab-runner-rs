@@ -15,7 +15,7 @@ pub mod uploader;
 pub use logging::GitlabLayer;
 use rand::distr::Alphanumeric;
 use rand::distr::SampleString;
-use runlist::JobRunList;
+pub use runlist::JobRunList;
 use tokio::fs::File;
 use tokio::io::AsyncReadExt;
 use tokio_util::sync::CancellationToken;
@@ -23,7 +23,7 @@ use tracing::debug;
 use tracing::instrument::WithSubscriber;
 
 mod runlist;
-pub use crate::runlist::RunList;
+use crate::runlist::RunList;
 
 use futures::prelude::*;
 use futures::AsyncRead;
