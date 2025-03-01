@@ -23,7 +23,7 @@ use tracing::debug;
 use tracing::instrument::WithSubscriber;
 
 mod runlist;
-use crate::runlist::RunList;
+pub use crate::runlist::RunList;
 
 use futures::prelude::*;
 use futures::AsyncRead;
