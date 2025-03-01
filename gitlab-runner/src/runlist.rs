@@ -106,6 +106,7 @@ where
     }
 }
 
+#[derive(Clone)]
 pub struct JobRunList(RunList<u64, JobLog>);
 
 impl From<RunList<u64, JobLog>> for JobRunList {
